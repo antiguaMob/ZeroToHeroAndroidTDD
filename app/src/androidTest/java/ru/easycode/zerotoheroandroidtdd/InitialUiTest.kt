@@ -21,6 +21,6 @@ class InitialUiTest {
     @Test
     fun test_hello_world() {
         onView(withText("Hello World!")).check(doesNotExist())
-        onView(withText("I am an Developer")).check(matches(isDisplayed()))
+        onView(withText("I am an Android Developer")).check(matches(isDisplayed()))
     }
 }
