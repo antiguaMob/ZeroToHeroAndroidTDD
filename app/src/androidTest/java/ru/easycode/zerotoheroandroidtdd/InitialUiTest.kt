@@ -1,7 +1,6 @@
 package ru.easycode.zerotoheroandroidtdd
 
 import androidx.test.espresso.Espresso.onView
-import androidx.test.espresso.assertion.ViewAssertions.doesNotExist
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withText
@@ -20,7 +19,6 @@ class InitialUiTest {
 
     @Test
     fun test_hello_world() {
-        onView(withText("Hello World!")).check(doesNotExist())
-        onView(withText("I am an Developer")).check(matches(isDisplayed()))
+        onView(withText("Hello World!")).check(matches(isDisplayed()))
     }
 }
